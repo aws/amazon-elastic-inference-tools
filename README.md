@@ -77,7 +77,7 @@ The script scans for existing endpoint associated with Amazon EI service for the
     EnableDnsSupport
     EnableDnsHostNames
   
-  In general following actions are taken by the script :
+##### In general following actions are taken by the script :
 
     The script discovers latest AWS DLAMI based on the operating system chosen by the user. 
 	If all steps succeed, the script launches an instance and reports the instance ID.  
