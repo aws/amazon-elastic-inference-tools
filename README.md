@@ -32,7 +32,7 @@ The script has a dependency on the following software:
 4. Subnet where you'd like to launch the instance 
 5. EC2 Key Pair
 
-You can then download theamazonei_setup.py (https://github.com/aws/amazon-elastic-inference-tools/blob/master/amazonei_setup.py) script to your local machine and run it from your terminal using the cmd:
+You can then download [the script](https://github.com/aws/amazon-elastic-inference-tools/blob/master/amazonei_setup.py) to your local machine and run it from your terminal using the cmd:
 
 	$ python amazonei_setup.py
 
@@ -70,7 +70,7 @@ The Policy description is as follows :
 
 The security group associated with EC2 instance needs to allow inbound traffic to port 443 as required by Amazon EI service. We also need inbound rule to allow traffic to port 22 for SSH. If a security group matching these rules is found it is used. However if no matching SG is found, a new SG with required rules is created. The outbound rules are set to allow traffic to all ports. The new SG name is “*amazon_ei_security_group”* with the description “*Security Group for accessing Amazon EI service”*
 
-##### Interface VPC endpoint (AWS Private Link) :
+##### Interface VPC endpoint (AWS Private Link):
 
 The script scans for existing endpoint associated with Amazon EI service for the region and VPC chosen by user. For example, for the us-west-2 region, the script looks for  the endpoint with name “*com.amazonaws.us-west-2.elastic-inference.runtime”* in the given VPC ID.  If the endpoint is not found, the script will create one. Also the script sets following attributes of the VPC endpoint to true, as required by Amazon EI:
 
@@ -82,7 +82,7 @@ The script scans for existing endpoint associated with Amazon EI service for the
 	* The script tries to obtain pubic DNS name after the instance is launched and is in running state 
 	* Even if the instance is running, it may not be ready for accepting SSH connection and users may want to wait until the instance is fully initialized. EC2 console or AWS CLI can be used to query the initialization 		state, using the instance ID that is reported by the script for the newly launched instance.   
 
-##### What to expect when you run the tool :
+##### What to expect when you run the tool:
 
 
 * The script can be launched from the command prompt as:
