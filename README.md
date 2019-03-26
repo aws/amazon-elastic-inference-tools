@@ -11,7 +11,7 @@ Amazon Elastic Inference Setup Tool for EC2
 
 
 
-The Amazon Elastic Inference (EI) setup tool is a python script that enables you to quickly get started with EI
+The Amazon Elastic Inference (EI) setup tool is a python script that enables you to quickly get started with EI.
 
 Amazon Elastic Inference allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Amazon SageMaker instances to reduce the cost of running deep learning inference by up to 75%. But, if you are using EI for the first time, setting up your environment to launch instances to EI can be onerous. You'll need to setup a number of dependencies including Amazon Web Services (AWS) PrivateLink VPC Endpoints, IAM policies, and security group rules before you can use EI accelerator. The EI setup tool makes it easy for you to get started by creating the necessary resources that will help you launch EI accelerators in minutes.
 
