@@ -9,7 +9,7 @@ Amazon Elastic Inference Setup Tool for EC2
 
 ## Amazon Elastic Inference Setup Tool for EC2 
 
-Authors: Shaikh Eftiquar, SW Dev Engineer, EI; Satadal Bhattacharjee, Principal Product Manager, EI
+
 
 The Amazon Elastic Inference (EI) setup tool is a python script that enables you to quickly get started with EI
 
