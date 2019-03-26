@@ -76,11 +76,14 @@ The script scans for existing endpoint associated with Amazon EI service for the
 
     EnableDnsSupport
     EnableDnsHostNames
-    The script will modify the endpoint and add SG and chosen subnet if they are missing from the discovered endpoint 
-    The script discovers latest AWS DLAMI based on the operating system chosen by the user 
-    If all steps succeed, the script launches an instance and reports the instance ID  
-    The script tries to obtain pubic DNS name after the instance is launched and is in running state 
-    Even if the instance is running, it may not be ready for accepting SSH connection and users may want to wait until the instance is fully initialized. EC2 console or AWS CLI can be used to query the initialization 		state, using the instance ID that is reported by the script for the newly launched instance.   
+  
+  In general following actions are taken by the script :
+
+    The script discovers latest AWS DLAMI based on the operating system chosen by the user. 
+	If all steps succeed, the script launches an instance and reports the instance ID.  
+	The script tries to obtain pubic DNS name after the instance is launched and is in running state.
+	Even if the instance is running, it may not be ready for accepting SSH connection and users may want to wait until the instance is fully initialized.
+    EC2 console or AWS CLI can be used to query the initialization state, using the instance ID that is reported by the script for the newly launched instance.      
 
 ##### What to expect when you run the tool:
 
