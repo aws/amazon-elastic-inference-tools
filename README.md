@@ -11,5 +11,4 @@ Amazon Elastic Inference Setup Tool for EC2
 
 The description of what this script does, and a sample output produced is found at following location :  
 
-Launch EI accelerators in minutes with the Amazon Elastic Inference setup tool for EC2 
-(https://aws-preview.aka.amazon.com/blogs/machine-learning/launch-ei-accelerators-in-minutes-with-the-amazon-elastic-inference-setup-tool-for-ec2/)
+[Launch EI accelerators in minutes with the Amazon Elastic Inference setup tool for EC2](https://aws-preview.aka.amazon.com/blogs/machine-learning/launch-ei-accelerators-in-minutes-with-the-amazon-elastic-inference-setup-tool-for-ec2/)
