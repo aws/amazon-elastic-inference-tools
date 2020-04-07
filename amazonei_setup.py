@@ -210,7 +210,7 @@ class EC2:
               reverse=True)
 
     def get_ubuntu_ami(self):
-        return self.get_ami('Deep Learning AMI (Ubuntu)*')[0]
+        return self.get_ami('Deep Learning AMI (Ubuntu*')[0]
 
 
     def get_linux_ami(self):
@@ -568,12 +568,11 @@ class UserInput:
 
 
     def get_accelerator_type(self):
+        accel_types = ['eia2.medium','eia2.large','eia2.xlarge','eia1.medium','eia1.large','eia1.xlarge']
+        accel_memory = ['2 GB of accelerator memory','4 GB of accelerator memory','8 GB of accelerator memory','1 GB of accelerator memory','2 GB of accelerator memory','4 GB of accelerator memory']
 
-        accel_types = ['eia1.medium','eia1.large','eia1.xlarge']
-        accel_memory = ['1 GB of accelerator memory','2 GB of accelerator memory','4 GB of accelerator memory']
-
-        print("\nPlease type index of the accelerator type to use:\n")
-
+        print("\nPlease type index of the accelerator type to use: (Note: eia1s are in deprecation mode. Please select eia2s unless there is a good reason not to. eia2s cost less than eia1s and have double the memory. However, eia2s are currently NOT available in ap-northeast-1.)\n")
+        
         for index, accel in enumerate(accel_types):
             print(" {}: {} ({})".format(index,accel,accel_memory[index]))
 
